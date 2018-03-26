@@ -1,0 +1,49 @@
+﻿@model IEnumerable<MVC.Helper.PersonDTO>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<p>
+    <input class="btn btn-warning" style="margin-top:10px;" type="button" value="Create" onclick="location.href='/home/Create'" />
+
+</p>
+<table class="table">
+    <tr>
+        <th>
+            FirstName
+        </th>
+        <th>
+            LastName
+        </th>
+        <th>
+            PhoneNumber
+        </th>
+        <th>
+            Email
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.FirstName
+            </td>
+            <td>
+                @item.LastName
+            </td>
+            <td>
+                @item.PhoneNumber
+            </td>
+            <td>
+                @item.Email
+            </td>
+            <td>
+                <input type="button" class="btn btn-danger" value="Edit" name="id" onclick="location.href='/home/edit?id=@item.PersonId'" />
+                <input type="button" class="btn btn-success" value="Delete" name="id" onclick="location.href='/home/delete?id=@item.PersonId'" />
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiCrudCore", "ApiCrudCore\ApiCrudCore.csproj", "{7F311D55-0527-47EA-9EF5-0DAA08D60B49}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FD16FB74-BA49-44F4-8026-AC112C410A2E} = {FD16FB74-BA49-44F4-8026-AC112C410A2E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC", "MVC\MVC.csproj", "{FD16FB74-BA49-44F4-8026-AC112C410A2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F311D55-0527-47EA-9EF5-0DAA08D60B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F311D55-0527-47EA-9EF5-0DAA08D60B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F311D55-0527-47EA-9EF5-0DAA08D60B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F311D55-0527-47EA-9EF5-0DAA08D60B49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD16FB74-BA49-44F4-8026-AC112C410A2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD16FB74-BA49-44F4-8026-AC112C410A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD16FB74-BA49-44F4-8026-AC112C410A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD16FB74-BA49-44F4-8026-AC112C410A2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {913FAAD2-3FDC-449D-8604-E7F97785C84B}
+	EndGlobalSection
+EndGlobal
